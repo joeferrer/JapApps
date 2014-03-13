@@ -1,0 +1,195 @@
+movie;eiga;eega;H
+music;ongaku;H
+sports;supootsu;F
+date(romantic);deeto;F
+tv;terebi;F
+ice cream;aisukuriimu;F
+breakfast;asagohan;H
+alcohol;osake;H
+tea;ocha;H
+coffee;koohii;F
+hamburger;hanbaagaa;F
+dinner;bangohan;H
+lunch;hirugohan;H
+water;mizu;H
+home;ie;uchi;H
+school;gakkou;H
+morning;asa;H
+tomorrow;ashita;H
+when;itsu;H
+today;kyou;kyoo;H
+at about;goro;H
+tonight;konban;H
+weekend;shuumatsu;H
+Saturday;doyoubi;doyoobi;H
+Sunday;nichiyoubi;niciyoobi;H
+every day;mainichi;H
+every night;maiban;H
+to go(destination);iku;H
+to go back/to return;kaeru;H
+to listen/to hear;kiku;H
+to drink;nomu;H
+to speak/to talk;hanasu;H
+to read;yomu;H
+to get up;okiru;H
+to eat;taberu;H
+to sleep;neru;H
+to see/to watch/to look at;miru;H
+to come;kuru;H
+to do;suru;H
+to study;benkyousuru;benkyoosuru;H
+good;ii;H
+early;hayai;H
+not much;amari;H
+not at all;zenzen;H
+usually;taitei;taitee;H
+a little;chotto;H
+sometimes;tokidoki;H
+often/much;yoku;H
+that's right/let me see;sou desu ne;soo desu ne;H
+but;demo;H
+how about...?/how is...?;dou desu ka;doo desu ka;H
+car;kuruma;H
+train;densha;H
+airplane;hikouki;hikooki;H
+taxi;takushii;F
+bus;basu;F
+horse;uma;H
+ship;fune;H
+dorm;ryou;ryoo;H
+this one;kore;H
+that one;sore;H
+that one over there;are;H
+which one;dore;H
+this...;kono;H
+that...;sono;H
+that...(over there);ano;H
+which...;dono;H
+here;koko;H
+there;soko;H
+over there;asoko;H
+where;doko;H
+who;dare;H
+delicious;oishii;H
+fish;sakana;H
+pork cutlet;tonkatsu;H
+meat;niku;H
+menu;menyuu;F
+vegetable;yasai;H
+pencil;enpitsu;H
+umbrella;kasa;H
+bag;kaban;H
+shoes;kutsu;H
+wallet;saifu;H
+jeans;jiinzu;F
+dictionary;jisho;H
+bicycle;jitensha;H
+newspaper;shinbun;H
+T-shirt;tiishatsu;F
+watch/clock;tokee;tokei;H
+notebook;nooto;F
+pen;pen;F
+hat;boushi;booshi;H
+book;hon;H
+cafe;kissaten;H
+bank;ginkou;ginkoo;H
+toilet/restroom;toire;F
+library;toshokan;H
+post office;yuubinkyoku;H
+U.S.A/America;Amerika;F
+Britain;Igirisu;F
+Korea;Kankoku;H
+China;Chuugoku;H
+Sweden;Suweeden;F
+Australia;Oosutoraria;F
+economics;keizai;keezai;H
+computer;konpyuutaa;F
+business;bijinesu;F
+history;rekishi;H
+how much;ikura;H
+yen;en;H
+expensive/high;takai;H
+cheap;yasui;H
+welcome/welcome(to our store);irasshaimase;H
+...,please/please;(wo) onegaishimasu;wo onegaishimasu;H
+please give me;(wo) kudasai;wo kudasai;H
+then.../then/if that is the case,.../if that is the case;jaa;H
+please/here it is;douzo;doozo;H
+Thank you;doumo;doomo;arigatou;arigatou;H
+um...;ano;H
+now;ima;H
+English(language);eigo;eego;H
+yes;hai;ee;H
+student;gakusei;gakusee;H
+...language;...go;go;H
+highschool;koukou;kookoo;H
+P.M.;gogo;H
+A.M.;gozen;H
+...years old/years old;...sai;sai;H
+Mr./Ms.;...san;san;H
+o'clock;...ji;ji;H
+...people/people;...jin;jin;H
+major;senkoo;senkou;H
+teacher/professor;sensee;sensei;H
+that's right;soo desu;sou desu;H
+university;daigaku;H
+telephone;denwa;H
+friend;tomodachi;H
+name;namae;H
+what;nan;nani;H
+Japan;Nihon;H
+...year student/year student;...nensee;...nensei;nensee;nensei;H
+half;han;H
+number;bangoo;bangou;H
+international student;ryuugakusee;ryuugakusei;H
+I;watashi;H
+science;kagaku;H
+Asian studies;ajia kenkyuu;FH
+international relations;kokusaikankee;kokusaikankei;H
+anthropology;jinruigaku;H
+politics;seeji;seiji;H
+literature;bungaku;H
+job/work/occupation;shigoto;H
+doctor;isha;H
+office worker;kaishain;H
+highschool student;kookoosee;koukousei;H
+housewife;shufu;H
+graduate student;daigakuinsee;daigakuinsei;H
+college student;daigakusei;daigakusee;H
+lawyer;bengoshi;H
+mother;okaasan;H
+father;otousan;otoosan;H
+older sister;oneesan;H
+older brother;oniisan;H
+younger sister;imouto;imooto;H
+younger brother;otooto;otouto;H
+radio;rajio;F
+table;uke;H
+cassette tape;teepu;F
+eraser;keshigomu;HF
+light bulb;denki;H
+chair;isu;H
+mechanical pencil;shaapen;F
+jacket;toreenaa;F
+TV;terebi;F
+paper;kami;H
+room;heya;H
+classroom;kyoushitsu;kyooshitsu;H
+Monday;getsuyoubi;getsuyoobi;H
+Tuesday;kayoubi;kayoobi;H
+Wednesday;suiyoubi;suiyoobi;H
+Thursday;mokuyoubi;mokuyoobi;H
+Friday;kinyoubi;kinyoobi;H
+January;ichigatsu;H
+February;nigatsu;H
+March;sangatsu;H
+April;shigatsu;H
+May;gogatsu;H
+June;rokugatsu;H
+July;shichigatsu;H
+August;hachigatsu;H
+September;kugatsu;H
+October;juugatsu;H
+November;juuichigatsu;H
+December;juunigatsu;H
+time;jikan;H
