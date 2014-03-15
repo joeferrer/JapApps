@@ -52,7 +52,7 @@ def randomize(mode,max_range):
 if __name__ == "__main__":
 
 	D = []
-	D.append([0,'ichi','ni','san','yon','go','roku','nana','hachi','kyuu',])
+	D.append([0,'ichi','ni','san','yon','go','roku','nana','hachi','kyuu'])
 	D.append([0,'juu','nijuu','sanjuu','yonjuu','gojuu','rokujuu','nanajuu','hachijuu','kyuujuu'])
 	D.append([0,'hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
 	D.append([0,'sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
