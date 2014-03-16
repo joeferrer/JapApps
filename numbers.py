@@ -71,7 +71,7 @@ if __name__ == "__main__":
 	print "1.) Specify your maximum range for number generation.\nChoose r from 0-11 (i.e.10^r): "
 	max_range = get_max_range()		
 
-	print "2.) Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
+	print "\n\n2.) Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
 	game_mode = get_game_mode()
 
 	if game_mode.lower() == "a":
@@ -120,6 +120,8 @@ if __name__ == "__main__":
 				max_range = get_max_range()
 				print "Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
 				game_mode = get_game_mode()
+				print "\n"
+				continue
 			elif user_answer.lower() == ans_1.lower() or user_answer.lower() == ans_2.lower():
 				print "Correct!\n\n"
 			else:
@@ -139,6 +141,7 @@ if __name__ == "__main__":
 				max_range = get_max_range()
 				print "Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
 				game_mode = get_game_mode()
+				print "\n"
 				continue
 			elif int(user_answer) == G:
 				print "Correct!\n\n"
