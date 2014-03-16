@@ -81,9 +81,10 @@ if __name__ == "__main__":
 		print "\n\n3.) Okay! Here's what you're supposed to do.\nA random Japanese number will be generated from 1->10^r.\nYou're objective is to give its corresponding Arabic numerical equivalent!"
 		print "\n\nExample: Generated JapNo. = 'Sen-sanbyaku-gojuu'\nAnswer = 1350\n\nNote: For 4,7,9 please use 'yon','nana','kyuu' respectively."
 
-	print "\n\n4.) You can quit at any point in the game by typing 'quit'.\nYou can reset the maximum range by typing 'reset'."
+	print "\n\n4.) Answers are NOT case sensitive."
+	print "\n\n5.) You can quit at any point in the game by typing 'quit'.\nYou can reset the maximum range by typing 'reset'."
 
-	print "\n\n5.) Press enter key to start..."
+	print "\n\n6.) Press enter key to start..."
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"

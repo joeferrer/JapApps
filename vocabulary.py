@@ -47,8 +47,9 @@ if __name__ == "__main__":
 	print "\n\n3.) Note, if you use 'ee' for prolonged 'e' stick to doubling like that for all other cases such as 'oo' vice-versa.\nOtherwise, if you use 'ei' stick to doubling like that and for other cases like 'ou',vice-versa.\nExample: if 'oo' kookoosee NOT kookoosei."
 	print "\n\nAlso note that 'masu' forms of verbs will not be accepted as the objective here is to know the dictionary form only."
 
-	print "\n\n4.) You can quit at any point in the game by typing 'quit'.\nYou can reset the game by typing 'reset'."
-	print "\n\n5.) Press enter key to start..."
+	print "\n\n4.) Answers are NOT case sensitive."
+	print "\n\n5.) You can quit at any point in the game by typing 'quit'.\nYou can reset the game by typing 'reset'."
+	print "\n\n6.) Press enter key to start..."
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"
