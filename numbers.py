@@ -119,10 +119,13 @@ if __name__ == "__main__":
 				max_range = get_max_range()
 				print "Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
 				game_mode = get_game_mode()
-			elif user_answer == ans_1 or user_answer == ans_2:
+			elif user_answer.lower() == ans_1.lower() or user_answer.lower() == ans_2.lower():
 				print "Correct!\n\n"
 			else:
-				print "Incorrect!\nThe answer is " + ans_1 + "\n...or " + ans_2 + "\n\n"
+				if ans_1.lower() != ans_2.lower():
+					print "Incorrect!\nThe answer is " + ans_1 + "\n...or " + ans_2 + "\n\n"
+				else:
+					print "Incorrect!\nThe answer is " + ans_1 + "\n\n"
 		else:
 			print ans_2
 			print "Type your answer: "
