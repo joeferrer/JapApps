@@ -78,7 +78,7 @@ if __name__ == "__main__":
 		random.shuffle(K)
 		mistakes = 0
 		count = 1 #Item Counter
-		print "Round " + str(R) + "\n\n"
+		print "\nRound " + str(R) + "\n\n"
 		for i in K:
 			print str(count) + " out of " + str(len(K)) + "; mistakes=" + str(mistakes) 
 			count = count + 1
@@ -91,9 +91,10 @@ if __name__ == "__main__":
 					looper = 2
 					break
 				elif user_answer_wd.lower() == "reset":
-					print "Choose the  game mode:\nA) English->Japanese	B)Japanese->English: "
+					print "\nChoose the  game mode:\nA) English->Japanese	B)Japanese->English: "
 					game_mode = get_game_mode()
-					continue	
+					R = 0
+					break	
 				print "Word Type(H/F/FH/HF only): "
 				user_answer_wt = get_word_type()
 				if (user_answer_wt.lower() == temp[len(temp)-1].lower()) and (user_answer_wd.lower() in [x.lower() for x in temp[0:len(temp)-1]]):
@@ -113,9 +114,10 @@ if __name__ == "__main__":
 					looper = 2
 					break
 				elif user_answer_wd.lower() == "reset":
-					print "Choose the  game mode:\nA) English->Japanese	B)Japanese->English: "
+					print "\nChoose the  game mode:\nA) English->Japanese	B)Japanese->English: "
 					game_mode = get_game_mode()
-					continue	
+					R = 0
+					break	
 				print "Word Type(H/F/FH/HF only): "
 				user_answer_wt = get_word_type()
 				if (user_answer_wt.lower() == temp[len(temp)-1].lower()) and (user_answer_wd.lower() in [x.lower() for x in e_temp[0:len(e_temp)]]):
@@ -126,7 +128,7 @@ if __name__ == "__main__":
 					print "English = " + str(e_temp) + "\n\n"
 					mistakes = mistakes + 1
 		score = len(K) - mistakes
-		if looper==1:
+		if looper==1 and R != 0:
 			print "Your score is " + str(score) + "/" + str(len(K)) + "\n\n"	
 		R = R + 1											
 	F.close()
