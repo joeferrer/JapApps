@@ -125,7 +125,8 @@ if __name__ == "__main__":
 					print "English = " + str(e_temp) + "\n\n"
 					mistakes = mistakes + 1
 		score = len(K) - mistakes
-		print "Your score is " + str(score) + "/" + str(len(K)) + "\n\n"	
+		if looper==1:
+			print "Your score is " + str(score) + "/" + str(len(K)) + "\n\n"	
 		R = R + 1											
 	F.close()
 
