@@ -193,3 +193,46 @@ October;juugatsu;H
 November;juuichigatsu;H
 December;juunigatsu;H
 time;jikan;H
+ouch;itai;ite;H
+canteen/dining room;shokudo;H
+homework;shukudai;H
+date(calendar);hizuke;H
+evening/night;yoru;H
+alone;hitoride;H
+from;kare;H
+until;made;H
+1 amt of <x>;hitotsu;H
+2 amt of <x>;futatsu;H
+3 amt of <x>;mittsu;H
+4 amt of <x>;yottsu;H
+5 amt of <x>;itsutsu;H
+6 amt of <x>;muttsu;H
+7 amt of <x>;nanatsu;H
+8 amt of <x>;yattsu;H
+9 amt of <x>;kokonotsu;H
+10 amt of <x>;too;H
+1 person;hitori;H
+2 persons;futari;H
+3 persons;sannin;H
+4 persons;yonin;H
+5 persons;gonin;H
+6 persons;rokunin;H
+7 persons;shichinin;H
+8 persons;hachinin;H
+9 persons;kyuunin;H
+10 persons;juunin;H
+greetings;aisatsu;H
+he/boyfriend;kare;H
+she/girlfriend;kanojo;H
+to pass;dasu;H
+to play;asobu;H
+to buy;kau;H
+to wait;matsu;H
+to take;toru;H
+to meet;au;H
+to die;shinu;H
+to swim;oyogu;H
+letter;tegami;H
+sea/beach;umi;H
+later;atode;H
+next week;raishuu;H
