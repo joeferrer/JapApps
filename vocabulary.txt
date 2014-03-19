@@ -115,7 +115,7 @@ welcome/welcome(to our store);irasshaimase;H
 please give me;(wo) kudasai;wo kudasai;H
 then.../then/if that is the case,.../if that is the case;jaa;H
 please/here it is;douzo;doozo;H
-Thank you;doumo;doomo;arigatou;arigatou;H
+Thank you;doumo;doomo;arigatou;arigatoo;H
 um...;ano;H
 now;ima;H
 English(language);eigo;eego;H
@@ -199,7 +199,7 @@ homework;shukudai;H
 date(calendar);hizuke;H
 evening/night;yoru;H
 alone;hitoride;H
-from;kare;H
+from;kara;H
 until;made;H
 1 amt of <x>;hitotsu;H
 2 amt of <x>;futatsu;H
