@@ -65,7 +65,7 @@ if __name__ == "__main__":
 	D.append([0,'hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
 	D.append([0,'sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
 
-	print "\nWelcome To 'Bangoo-Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\n\n"
+	print "\nWelcome To 'Bangoo-Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
 	print "INSTRUCTIONS\n"
 	
 	print "1.) Specify your maximum range for number generation.\nChoose r from 0-11 (i.e.10^r): "

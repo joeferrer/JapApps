@@ -33,7 +33,7 @@ def get_word_type():
 	return wtype
 
 if __name__ == "__main__":
-	print "\nWelcome To 'Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\n\n"
+	print "\nWelcome To 'Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
 	print "INSTRUCTIONS\n"
 
 	print "1.) Choose the  game mode:\nA) English->Japanese	B)Japanese->English: "
