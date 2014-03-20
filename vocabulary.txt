@@ -194,7 +194,7 @@ November;juuichigatsu;H
 December;juunigatsu;H
 time;jikan;H
 ouch;itai;ite;H
-canteen/dining room;shokudo;H
+canteen/dining room;shokudou;shokudoo;H
 homework;shukudai;H
 date(calendar);hizuke;H
 evening/night;yoru;H
@@ -232,7 +232,9 @@ to take;toru;H
 to meet;au;H
 to die;shinu;H
 to swim;oyogu;H
+to write;kaku;H
 letter;tegami;H
 sea/beach;umi;H
 later;atode;H
 next week;raishuu;H
+bread;pan;F
