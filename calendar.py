@@ -101,7 +101,7 @@ if __name__ == "__main__":
 				game_mode = get_game_mode()
 				print "\n"
 				continue
-			elif user_answer.lower() in [str(jq).lower()]:
+			elif user_answer.lower() in [x.lower() for x in jq]:
 				print "Correct!\n\n"
 			else:
 				print "Incorrect!\nThe answer is " + str(jq).lower() + "\n\n"
