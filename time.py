@@ -1,8 +1,10 @@
-#Program: Jikan - Japanese Time Tester Program
-#Version: Terminal Version
-#Programmer: Joseph Ferrer
-#Email:joferrer16@gmail.com
-#Github Username: joeferrer
+'''
+Program: Jikan - Japanese Time Tester Program
+Version: Terminal Version
+Programmer: Joseph Ferrer
+Email:joferrer16@gmail.com
+Github: github.com/joeferrer
+'''
 
 from random import randrange
 import sys
@@ -31,7 +33,7 @@ def str_minutes(x):
 
 if __name__ == "__main__":
 
-	print "\nWelcome To 'Jikan Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
+	print "\nWelcome To 'Jikan Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:github.com/joeferrer\n\n"
 	print "INSTRUCTIONS\n"
 
 	print "1.) Choose the  game mode:\nA) Time->Japanese	B)Japanese->Time: "

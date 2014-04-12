@@ -1,9 +1,10 @@
-#Program: Tango - General Japanese Vocabulary Tester Program
-#Version: Terminal Version
-#Programmer: Joseph Ferrer
-#Email:joferrer16@gmail.com
-#Github Username: joeferrer
-
+'''
+Program: Tango - General Japanese Vocabulary Tester Program
+Version: Terminal Version
+Programmer: Joseph Ferrer
+Email:joferrer16@gmail.com
+Github: github.com/joeferrer
+'''
 
 
 import random
@@ -33,7 +34,7 @@ def get_word_type():
 	return wtype
 
 if __name__ == "__main__":
-	print "\nWelcome To 'Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
+	print "\nWelcome To 'Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:github.com/joeferrer\n\n"
 	print "INSTRUCTIONS\n"
 
 	print "1.) Choose the  game mode:\nA) English->Japanese	B)Japanese->English: "

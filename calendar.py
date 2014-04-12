@@ -1,9 +1,10 @@
-#Program: Jikan - Japanese Calendar Test Program
-#Version: Terminal Version
-#Programmer: Joseph Ferrer
-#Email:joferrer16@gmail.com
-#Github Username: joeferrer
-
+'''
+Program: Jikan - Japanese Calendar Tester Program
+Version: Terminal Version
+Programmer: Joseph Ferrer
+Email:joferrer16@gmail.com
+Github: github.com/joeferrer
+'''
 
 from random import randrange
 from operator import add
@@ -50,7 +51,7 @@ if __name__ == "__main__":
 	Y.append(['','hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
 	Y.append(['','sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
 	
-	print "\nWelcome To 'Karendaa Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
+	print "\nWelcome To 'Karendaa Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:github.com/joeferrer\n\n"
 	print "INSTRUCTIONS\n"
 
 	print "1.) Choose the  game mode:\nA) Date->Japanese	B)Japanese->Date: "
