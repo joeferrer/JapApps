@@ -2,7 +2,6 @@ movie;eiga;eega;H
 music;ongaku;H
 sports;supootsu;F
 date(romantic);deeto;F
-tv;terebi;F
 ice cream;aisukuriimu;F
 breakfast;asagohan;H
 alcohol;osake;H
