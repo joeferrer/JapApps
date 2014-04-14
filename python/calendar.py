@@ -7,8 +7,8 @@
 
 from random import randrange
 from operator import add
-from modules.userinput import get_input
-from modules.userinput import get_game_mode
+from modules.user_end import get_input
+from modules.user_end import get_game_mode
 
 def str_dayn(x):
 	r = x%10

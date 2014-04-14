@@ -6,14 +6,8 @@
 
 from random import randrange
 from operator import add
-import sys
-
-def get_input():
-	version = sys.version_info
-	if version[0] > 2:
-		return input()
-	else:
-		return raw_input()
+from modules.user_end import get_input
+from modules.user_end import get_game_mode
 
 def get_max_range():
 	max_range = 1
@@ -27,14 +21,6 @@ def get_max_range():
 			print "Invalid input. Choose r to be from 0-11 only!"
 	return max_range
 			
-def get_game_mode():
-	choice = "z"
-	while choice.lower() != "a" and choice.lower() != "b":
-		choice = get_input()
-		if choice.lower() != "a" and choice.lower() != "b":
-			print "Invalid input. Choose between 'A' and 'B' only!"
-	return choice
-
 def randomize(mode,max_range):
 	if mode == 1:
 		return randrange(1,max_range+1,1)
