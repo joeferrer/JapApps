@@ -8,6 +8,8 @@ from random import randrange
 from operator import add
 from modules.user_end import get_input
 from modules.user_end import get_game_mode
+from modules.japs_lib import get_list_jap_nums
+import modules.app_struct
 
 def get_max_range():
 	max_range = 1
@@ -37,40 +39,26 @@ def randomize(mode,max_range):
 
 if __name__ == "__main__":
 
-	D = []
-	D.append([0,'ichi','ni','san','yon','go','roku','nana','hachi','kyuu'])
-	D.append([0,'juu','nijuu','sanjuu','yonjuu','gojuu','rokujuu','nanajuu','hachijuu','kyuujuu'])
-	D.append([0,'hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
-	D.append([0,'sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
-	D.append(['man','ichiman','niman','sanman','yonman','goman','rokuman','nanaman','hachiman','kyuuman'])
-	D.append([0,'juu','nijuu','sanjuu','yonjuu','gojuu','rokujuu','nanajuu','hachijuu','kyuujuu'])
-	D.append([0,'hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
-	D.append([0,'sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
-	D.append(['oku','ichioku','nioku','sanoku','yonoku','gooku','rokuoku','nanaoku','hachioku','kyuuoku'])
-	D.append([0,'juu','nijuu','sanjuu','yonjuu','gojuu','rokujuu','nanajuu','hachijuu','kyuujuu'])
-	D.append([0,'hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
-	D.append([0,'sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
+	D = get_list_jap_nums(0)
 
-	print "\nWelcome To 'Bangoo-Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
-	print "INSTRUCTIONS\n"
+	modules.app_struct.I_INTRO("Bangoo-Tango Terminal Version","Joe Ferrer","joferrer16@gmail.com","github.com/joeferrer")
 	
 	print "1.) Specify your maximum range for number generation.\nChoose r from 0-11 (i.e.10^r): "
 	max_range = get_max_range()		
 
-	print "\n\n2.) Choose the  game mode:\nA) Number->Japanese	B)Japanese->Number: "
+	modules.app_struct.I_GMODE("2")
 	game_mode = get_game_mode()
 
 	if game_mode.lower() == "a":
-		print "\n\n3.) Okay! Here's what you're supposed to do.\nA random number will be generated from 1->10^r.\nYou're objective is to translate it to Japanese!"	
-		print "\n\nExample: Generated No. = 1350\nAnswer = 'Sen-sanbyaku-gojuu' or 'Sensanbyakugojuu'\n\nNote: For 4,7,9 please use 'yon','nana','kyuu' respectively."
+		modules.app_struct.I_INSTR("3","\nA random number will be generated from 1->10^r.\nYou're objective is to translate it to Japanese!")
+		modules.app_struct.I_EX("Generated No. = 1350\nAnswer = 'Sen-sanbyaku-gojuu' or 'Sensanbyakugojuu'\n\nNote: For 4,7,9 please use 'yon','nana','kyuu' respectively.")
 	else:
-		print "\n\n3.) Okay! Here's what you're supposed to do.\nA random Japanese number will be generated from 1->10^r.\nYou're objective is to give its corresponding Arabic numerical equivalent!"
-		print "\n\nExample: Generated JapNo. = 'Sen-sanbyaku-gojuu'\nAnswer = 1350\n\nNote: For 4,7,9 please use 'yon','nana','kyuu' respectively."
+		modules.app_struct.I_INSTR("3","\nA random Japanese number will be generated from 1->10^r.\nYou're objective is to give its corresponding Arabic numerical equivalent!")
+		modules.app_struct.I_EX("Generated JapNo. = 'Sen-sanbyaku-gojuu'\nAnswer = 1350\n\nNote: For 4,7,9 please use 'yon','nana','kyuu' respectively.")	
 
-	print "\n\n4.) Answers are NOT case sensitive."
-	print "\n\n5.) You can quit at any point in the game by typing 'quit'.\nYou can reset the maximum range by typing 'reset'."
-
-	print "\n\n6.) Press enter key to start..."
+	modules.app_struct.I_CASE("4")
+	modules.app_struct.I_QR("5")
+	modules.app_struct.I_START("6")
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"

@@ -9,33 +9,25 @@
 import random
 from modules.user_end import get_input
 from modules.user_end import get_game_mode
-
-def get_word_type():
-	wtype = "z"
-	while wtype.lower() != "h" and wtype.lower() != "f" and wtype.lower() != "hf" and wtype.lower() != "fh":
-		wtype = get_input()
-		if wtype.lower() != "h" and wtype.lower() != "f" and wtype.lower() != "hf" and wtype.lower() != "fh":
-			print "Invalid input. Choose among 'H','F','FH' and 'HF' only!"
-	return wtype
+from modules.user_end import get_word_type
+import modules.app_struct
 
 if __name__ == "__main__":
-	print "\nWelcome To 'Tango Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
-	print "INSTRUCTIONS\n"
 
-	print "1.) Choose the  game mode:\nA) English->Japanese	B)Japanese->English: "
+	modules.app_struct.I_INTRO("Tango Terminal Version","Joe Ferrer","joferrer16@gmail.com","github.com/joeferrer")
+	modules.app_struct.I_GMODE("1")
 	game_mode = get_game_mode()
 
 	if game_mode.lower() == "a":
-		print "\n\n2.) Okay here's what you're supposed to do.\nA random English word/phrase will be displayed.\nYou must first identify if the word is in Hiragana 'H' or Katakana 'F' or\n'FH' if in Katakana-Hiragana form or 'HF' if in Hiragana-Katakana form.\nThen, translate the word to Japanese."
+		modules.app_struct.I_INSTR("2","\nA random English word/phrase will be displayed.\nYou must first identify if the word is in Hiragana 'H' or Katakana 'F' or\n'FH' if in Katakana-Hiragana form or 'HF' if in Hiragana-Katakana form.\nThen, translate the word to Japanese.")
 	else:
-		print "\n\n2.) Okay here's what you're supposed to do.\nA random Japanese word/phrase will be displayed.\nYou must first identify if the word is in Hiragana 'H' or Katakana 'F' or\n'FH' if in Katakana-Hiragana form or 'HF' if in Hiragana-Katakana form.\nThen, translate the word to English."
+		modules.app_struct.I_INSTR("2","\nA random Japanese word/phrase will be displayed.\nYou must first identify if the word is in Hiragana 'H' or Katakana 'F' or\n'FH' if in Katakana-Hiragana form or 'HF' if in Hiragana-Katakana form.\nThen, translate the word to English.")
 
-	print "\n\n3.) Note, if you use 'ee' for prolonged 'e' stick to doubling like that for all other cases such as 'oo' vice-versa.\nOtherwise, if you use 'ei' stick to doubling like that and for other cases like 'ou',vice-versa.\nExample: if 'oo' kookoosee NOT kookoosei."
-	print "\n\nAlso note that 'masu' forms of verbs will not be accepted as the objective here is to know the dictionary form only."
-
-	print "\n\n4.) Answers are NOT case sensitive."
-	print "\n\n5.) You can quit at any point in the game by typing 'quit'.\nYou can reset the game by typing 'reset'."
-	print "\n\n6.) Press enter key to start..."
+	modules.app_struct.I_NOTE("3.) ","\n\n","Note, if you use 'ee' for prolonged 'e' stick to doubling like that for all other cases such as 'oo' vice-versa.\nOtherwise, if you use 'ei' stick to doubling like that and for other cases like 'ou',vice-versa.\nExample: if 'oo' kookoosee NOT kookoosei.\n\nAlso note that 'masu' forms of verbs will not be accepted as the objective here is to know the dictionary form only.")
+	
+	modules.app_struct.I_CASE("4")
+	modules.app_struct.I_QR("5")
+	modules.app_struct.I_START("6")
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"

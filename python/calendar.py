@@ -9,6 +9,10 @@ from random import randrange
 from operator import add
 from modules.user_end import get_input
 from modules.user_end import get_game_mode
+from modules.japs_lib import get_dict_jap_month
+from modules.japs_lib import get_list_jap_days
+from modules.japs_lib import get_list_jap_nums
+import modules.app_struct
 
 def str_dayn(x):
 	r = x%10
@@ -25,38 +29,28 @@ def str_dayn(x):
 	
 
 if __name__ == "__main__":
-	M = {'January':'Ichigatsu','February':'Nigatsu','March':'Sangatsu','April':'Shigatsu','May':'Gogatsu','June':'Rokugatsu','July':'Shichigatsu','August':'Hachigatsu','September':'Kugatsu','October':'Juugatsu','November':'Juuichigatsu','December':'Juunigatsu'}
-	D = []
-	D.append(['',['Tsuitachi'],['Futsuka'],['Mikka'],['Yokka'],['Itsuka'],['Muika'],['Nanoka'],['Yooka','Youka'],['Kokonoka'],['Tooka','Touka']])
-	D.append(['','ichi','ni','san','yokka','go','roku','shichi','hachi','ku'])
-	D.append(['','juu','nijuu','sanjuu'])
-	Y = []
-	Y.append(['','ichi','ni','san','yon','go','roku','nana','hachi','kyuu'])
-	Y.append(['','juu','nijuu','sanjuu','yonjuu','gojuu','rokujuu','nanajuu','hachijuu','kyuujuu'])
-	Y.append(['','hyaku','nihyaku','sanbyaku','yonhyaku','gohyaku','roppyaku','nanahyaku','happyaku','kyuuhyaku'])
-	Y.append(['','sen','nisen','sanzen','yonsen','gosen','rokusen','nanasen','hassen','kyuusen'])
+	M = get_dict_jap_month()
+	D = get_list_jap_days('')
+	Y = get_list_jap_nums('')
 	
-	print "\nWelcome To 'Karendaa Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
-	print "INSTRUCTIONS\n"
-
-	print "1.) Choose the  game mode:\nA) Date->Japanese	B)Japanese->Date: "
+	modules.app_struct.I_INTRO("Karendaa Terminal Version","Joe Ferrer","joferrer16@gmail.com","github.com/joeferrer")
+	modules.app_struct.I_GMODE("1")
 	game_mode = get_game_mode()
 
 	if game_mode.lower() == "a":
-		print "\n\n2.) Okay! Here's what you're supposed to do.\nA random date will be generated\nYou're objective is to translate it to Japanese!"	
-		print "\n\nExample: Generated Date. = '6th of November 2010'\nAnswer = 'nisenjuunen juuichigatsu muika'\nNote: Remember to put the needed spaces."
+		modules.app_struct.I_INSTR("2","\nA random date will be generated\nYou're objective is to translate it to Japanese!")
+		modules.app_struct.I_EX("Generated Date. = '6th of November 2010'\nAnswer = 'nisenjuunen juuichigatsu muika'.")
+		modules.app_struct.I_NOTE("","\n","Note: Remember to put the needed spaces.")
 	else:
-		print "\n\n2.) Okay! Here's what you're supposed to do.\nA random date in Japanese will be generated\nYou're objective is to give its corresponding date."
-		print "\n\nExample: Generated JapDate. = 'nisenjuunen juuichigatsu muika'\nAnswer = '6th of November 2010'\nNote: Remember to put the needed spaces."
+		modules.app_struct.I_INSTR("2","\nA random date in Japanese will be generated\nYou're objective is to give its corresponding date.")
+		modules.app_struct.I_EX("Generated JapDate. = 'nisenjuunen juuichigatsu muika'\nAnswer = '6th of November 2010'\nNote: Remember to put the needed spaces.")
 
-	print "\n\n3.) Answers are NOT case sensitive"
-	print "\n\n4.) You can quit at any point in the game by typing 'quit'.\nYou can reset the game by typing 'reset'."
-	print "\n\n6.) Press enter key to start..."
+	modules.app_struct.I_CASE("3")
+	modules.app_struct.I_QR("4")
+	modules.app_struct.I_START("5")
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"
-
-
 
 	while 1==1:
 		day = randrange(1,32,1)

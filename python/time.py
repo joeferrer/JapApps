@@ -7,6 +7,9 @@
 from random import randrange
 from modules.user_end import get_input
 from modules.user_end import get_game_mode
+from modules.japs_lib import get_list_jap_mins
+from modules.japs_lib import get_list_jap_hours
+import modules.app_struct
 
 def str_minutes(x):
 	if x < 10:
@@ -17,31 +20,27 @@ def str_minutes(x):
 
 if __name__ == "__main__":
 
-	print "\nWelcome To 'Jikan Terminal Version'\nCreated by Joe Ferrer\nEmail:joferrer16@gmail.com\nGithub:joeferrer\n\n"
-	print "INSTRUCTIONS\n"
-
-	print "1.) Choose the  game mode:\nA) Time->Japanese	B)Japanese->Time: "
+	modules.app_struct.I_INTRO("Jikan Terminal Version","Joe Ferrer","joferrer16@gmail.com","github.com/joeferrer")
+	modules.app_struct.I_GMODE("1")
 	game_mode = get_game_mode()
 
 	if game_mode.lower() == "a":
-		print "\n\n2.) Okay! Here's what you're supposed to do.\nA random time will be generated\nYou're objective is to translate it to Japanese!"	
-		print "\n\nExample: Generated No. = 3:45 AM\nAnswer = 'gozen sanjiyonjuugofun'\nNote: Put a space after gozen/gogo."
+		modules.app_struct.I_INSTR("2","\nA random time will be generated\nYou're objective is to translate it to Japanese!")
+		modules.app_struct.I_EX("Generated No. = 3:45 AM\nAnswer = 'gozen sanjiyonjuugofun'\nNote: Put a space after gozen/gogo.")
 	else:
-		print "\n\n2.) Okay! Here's what you're supposed to do.\nA random time in Japanese will be generated\nYou're objective is to give its corresponding time."
-		print "\n\nExample: Generated JapNo. = 'gozen sanjiyonjuugofun'\nAnswer = 3:45 AM\nNote: Put a space before AM/PM."
+		modules.app_struct.I_INSTR("2","\nA random time in Japanese will be generated\nYou're objective is to give its corresponding time.")
+		modules.app_struct.I_EX("Generated JapNo. = 'gozen sanjiyonjuugofun'\nAnswer = 3:45 AM\nNote: Put a space before AM/PM.")
 
-	print "\n\n3.) Note: For simplicity's sake, 'han' and other like terms will not be accepted.\ni.e. 30 min = sanjuupun\n\nAlso for simplicity, 8 min = happun NOT hachifun."
-	print "\n\n4.) Answers are NOT case sensitive"
-	print "\n\n5.) You can quit at any point in the game by typing 'quit'.\nYou can reset the game by typing 'reset'."
-	print "\n\n6.) Press enter key to start..."
+	modules.app_struct.I_NOTE("3.) ","\n\n","Note: For simplicity's sake, 'han' and other like terms will not be accepted.\ni.e. 30 min = sanjuupun\n\nAlso for simplicity, 8 min = happun NOT hachifun.")	
+	modules.app_struct.I_CASE("4")
+	modules.app_struct.I_QR("5")
+	modules.app_struct.I_START("6")
 	get_input()
 
 	print "Ganbatte Kudasai! START!\n\n"
 
-	D = []
-	D.append(['pun','ippun','nifun','sanpun','yonpun','gofun','roppun','nanafun','happun','kyuufun','juppun'])
-	D.append(['','juu','nijuu','sanjuu','yonjuu','gojuu'])
-	D.append(['','ichiji','niji','sanji','yoji','goji','rokuji','shichiji','hachiji','kuji','juuji','juuichiji','juuniji'])
+	D = get_list_jap_mins('')
+	D =  D + get_list_jap_hours('')
 	D.append(['','gozen','gogo',"AM","PM"])
 	
 	user_answer = ""
