@@ -11,3 +11,4 @@ So far, only the creator, Joe Ferrer, is contributing to this project. Other con
 ##Usage
 For you to access the applications/ programs, you must first download the ZIP file of this repository or pull this repository from github. Then depending on the programming language/ tool/ framework used for the apps you wish to use, follow the instructions in its corresponding folder accordingly. 
 
+<br/>
